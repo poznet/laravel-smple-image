@@ -1,0 +1,26 @@
+{
+    "name": "poznet/image",
+    "description": "Image Bundle",
+    "authors": [
+        {
+            "name": "poznet",
+            "email": "biuro@pozycjonet.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "intervention/image": "^2.3"
+    },
+
+    "scripts": {
+        "post-install-cmd": [
+
+        ],
+        "post-update-cmd": [
+
+        ],
+        "post-create-project-cmd": [
+
+        ]
+    }
+}
