@@ -13,7 +13,10 @@ Stores manipulated images in cache for better performance.
 
 ###Installation 
 
-- Add to your composer.json 
+- Add to poznet/image your composer.json 
+
+`composer require poznet/image`
+
 - In config/app.php  register service in providers (add "Poznet\Image\PoznetImageProvider" to providers)
 
 ```'
