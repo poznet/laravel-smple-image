@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class PozentImageProvider extends ServiceProvider {
+class PoznetImageProvider extends ServiceProvider {
 
 	/**
 	 * Bootstrap the application services.
@@ -11,21 +11,15 @@ class PozentImageProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
-    
 
+		$this->app->make('Poznet\Image\Controllers\ImageController');
+		//rejestracja  providerów
 
-    $this->app->make('Poznet\Image\Controllers\ImageController');
+		$this->app->register('Intervention\Image\ImageServiceProvider');
 
-
-
-    //rejestracja  providerów
-
-    $this->app->register('Intervention\Image\ImageServiceProvider');
-
-    $this->app->register('Illuminate\Html\HtmlServiceProvider');
-    $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-    $loader->alias('Image', 'Intervention\Image\Facades\Image');
+		$this->app->register('Illuminate\Html\HtmlServiceProvider');
+		$loader = \Illuminate\Foundation\AliasLoader::getInstance();
+		$loader->alias('Image', 'Intervention\Image\Facades\Image');
 
 	}
 
@@ -36,7 +30,7 @@ class PozentImageProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		include __DIR__.'/../routes/image.php';
+		include __DIR__ . '/routes/image.php';
     
 	}
 
