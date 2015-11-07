@@ -1,7 +1,6 @@
 {
     "name": "poznet/image",
     "description": "Simple Image procesing for Laravel 5 - wrapper for intervention/image ",
-    "version": "0.1.0",
     "keywords": ["laravel","image","imagick","gd","imagine","thumbnail"],
     "homepage": "https://github.com/poznet/laravel-smple-image",
     "license": "MIT",
