@@ -6,7 +6,7 @@ use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Cache;
 
 
-use App\Http\Requests;
+
 use App\Http\Controllers\Controller;
 use Poznet\Image\Helpers\Media;
 
@@ -37,7 +37,7 @@ class ImageController extends Controller
         $img->resize($width, null, function ($constraint) {
             $constraint->aspectRatio();
         });
-        Cache::add('img-'.$width.'-'.$path, $img->response(), 7);
+        Cache::add('img-'.$width.'-'.$path, $img->response(), 60);
 
 
         return Cache::get('img-'.$width.'-'.$path);

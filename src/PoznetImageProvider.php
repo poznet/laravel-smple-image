@@ -8,12 +8,12 @@ class PoznetImageProvider extends ServiceProvider {
 	 * Bootstrap the application services.
 	 *
 	 * @return void
-	 */
+	 */                                                  
 	public function boot()
 	{
 
 		$this->app->make('Poznet\Image\Controllers\ImageController');
-		//rejestracja  providerów
+		//rejestracja  providerow
 
 		$this->app->register('Intervention\Image\ImageServiceProvider');
 

@@ -29,11 +29,15 @@ All paths is relative to /storage/app/  and it's get by Storage Facade (local), 
 
 1. Resized  image
 in Blade view   to get resized image with  widh of 450px use code below. 
+Output is cached for  60 minutes with Cache Facade
 
 
 `<img src="{{route('imagemin', ['width'=>'450','path'=>'logo.jpg'])}}">`
 
 
 
+### Licence 
+Intervention Imagecache Class is licensed under the MIT License.
+Feel free to contribute. 
 
 
