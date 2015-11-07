@@ -16,7 +16,8 @@
         "intervention/image": "^2.3"
     },
     "autoload": {
-        "psr-4": { "Poznet\\Image\\": "src/" }
+        "psr-0": { "Poznet\\Image\\": "src/" }
+
     },
 
     "scripts": {
