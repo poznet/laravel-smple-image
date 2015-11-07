@@ -15,7 +15,7 @@ class PozentImageProvider extends ServiceProvider {
     
 
 
-    $this->app->make('Poznet\PPAL\Controllers\Auth\AuthController');
+    $this->app->make('Poznet\Image\Controllers\ImageController');
 
 
 

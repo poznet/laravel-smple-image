@@ -1,6 +1,6 @@
 <?php
 
-namespace Poznet\PPAL\Controllers;
+namespace Poznet\Image\Controllers;
 
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Cache;
@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Helpers\Media;
+use Poznet\Image\Helpers\Media;
 use Illuminate\Http\Response;
 
 class ImageController extends Controller
