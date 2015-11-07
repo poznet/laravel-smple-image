@@ -15,7 +15,7 @@ Stores manipulated images in cache for better performance.
 
 - Add to poznet/image your composer.json 
 
-`composer require poznet/image`
+`composer require poznet/image:dev-master`
 
 - In config/app.php  register service in providers (add "Poznet\Image\PoznetImageProvider" to providers)
 
