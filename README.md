@@ -1,5 +1,8 @@
 # Simple Image procesing for Laravel 5
 ###### Wrapper for intervention/image
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/1082dbc0-f990-4811-8ac3-1c070fdf446c/big.png)](https://insight.sensiolabs.com/projects/1082dbc0-f990-4811-8ac3-1c070fdf446c)
+
 Bundle/Service created for simple dynamic image manipulation (resize for  example).
 Stores manipulated images in cache for better performance.
 
@@ -29,7 +32,7 @@ All paths is relative to /storage/app/  and it's get by Storage Facade (local), 
 
 1. Resized  image
 in Blade view   to get resized image with  widh of 450px use code below. 
-Output is cached for  60 minutes with Cache Facade
+Output is cached for  60 minutes with Cache Facade.
 
 
 `<img src="{{route('imagemin', ['width'=>'450','path'=>'logo.jpg'])}}">`

@@ -5,10 +5,9 @@ namespace Poznet\Image\Controllers;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Cache;
 
-
-
 use App\Http\Controllers\Controller;
 use Poznet\Image\Helpers\Media;
+use Intervention\Image\Constraint;
 
 
 class ImageController extends Controller
@@ -34,14 +33,15 @@ class ImageController extends Controller
     public function getMin($width, $path, Media $media)
     {
         $img = Image::make($media->getImage($path));
-        $img->resize($width, null, function ($constraint) {
+        $img->resize($width, null, function (Constraint $constraint) {
             $constraint->aspectRatio();
         });
-        Cache::add('img-'.$width.'-'.$path, $img->response(), 60);
+        Cache::add('img-' . $width . '-' . $path, $img->response(), 60);
 
 
-        return Cache::get('img-'.$width.'-'.$path);
+        return Cache::get('img-' . $width . '-' . $path);
 
 
     }
+
 }
