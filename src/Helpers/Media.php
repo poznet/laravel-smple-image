@@ -2,9 +2,9 @@
 
 namespace Poznet\Image\Helpers;
 
-use Illuminate\Support\Facades\File;
+
 use Illuminate\Support\Facades\Storage;
-use Symfony\Component\HttpFoundation\File\UploadedFile as Uploaded;
+
 
 /**
  * Created by PhpStorm.
