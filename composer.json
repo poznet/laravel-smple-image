@@ -1,10 +1,10 @@
 {
     "name": "poznet/image",
-    "description": "Image Bundle",
+    "description": "Simple Image procesing for Laravel 5 - wrapper for intervention/image ",
     "authors": [
         {
             "name": "poznet",
-            "email": "biuro@pozycjonet.net"
+            "email": "pozycjoner.net@gmail.com"
         }
     ],
     "minimum-stability": "dev",
