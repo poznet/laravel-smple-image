@@ -7,4 +7,5 @@ before_script:
   - composer self-update
   - composer --prefer-source --dev install
   - composer create-project laravel/laravel:5.* --prefer-dist
+  - composer require poznet/image
   
