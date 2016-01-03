@@ -59,14 +59,6 @@ class ImageController extends Controller
 
 
 
-
-
-
-
-
-        header ('content-type: image/jpeg');
-
-
         return $img;
 
 
