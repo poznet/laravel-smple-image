@@ -26,6 +26,9 @@ class Media
     public function __construct()
     {
         $this->disk = Storage::disk('local');
+        $exists = $this->disk->exists('tmp');
+        if (!$exists)
+            $this->disk->makeDirectory('tmp');
     }
 
 
