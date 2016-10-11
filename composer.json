@@ -14,6 +14,7 @@
     "minimum-stability": "stable",
     "require": {
         "intervention/image": "^2.3",
+        "illuminate/html": "^5.0",
         "ps/image-optimizer": "^1.0"
     },
     "autoload": {
